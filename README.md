@@ -2,7 +2,6 @@
 Pace of Age calculator for Illumina methyl-array data
 
 PoAmProjector.R -- 20200418
-getRequiredProbes.R -- 20200418
 
 Given a set of methylation beta values, this tool will calculate the Dunedin Methylation Pace of Aging Methylation Score
  
@@ -16,7 +15,7 @@ devtools::install_github("DLCorcoran/DunedinPoAm")
 mPoAprojector(betas)
 ```
 
-#####To see list of probes necessary for each model:
+#### To see list of probes necessary for each model:
 ```r
 getRequiredProbes()
 ```
