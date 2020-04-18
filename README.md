@@ -12,7 +12,7 @@ devtools::install_github("DLCorcoran/DunedinPoAm")
 
 #### Usage:
 ```r
-mPoAprojector(betas)
+PoAmProjector(betas)
 ```
 
 #### To see list of probes necessary for each model:
