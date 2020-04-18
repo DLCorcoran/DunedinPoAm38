@@ -22,10 +22,8 @@ getRequiredProbes()
 
 ## Input:
 ####  betas:
-    Matrix or data.frame of beta values where rownames are probe ids and  
-    column names should correspond to sample names.  
-    Ensure beta values are numeric  
-    Missing values should be coded as 'NA'  
+    Matrix or data.frame of beta values where rownames are probe ids and column names should correspond to sample names.  
+    Ensure beta values are numeric and that missing values should be coded as 'NA'  
 
 ####  proportionOfProbesRequired:  
     This is the proportion of probes to have a non-missing value for both the sample to have a  
