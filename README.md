@@ -33,5 +33,5 @@ getRequiredProbes()
     By default, this is set to 0.8  
   
 ## Output:  
-  [1] A list containing the mPoAs for each model
+   A list containing the mPoAs for each model
 
