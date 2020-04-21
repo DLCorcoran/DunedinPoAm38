@@ -37,7 +37,7 @@ PoAmProjector = function( betas, proportionOfProbesRequired=0.8 ) {
       }
 
       # Identify samples with too many missing probes and remove them from the matrix
-      samplesToRemove <- colnames(betas.mat)[which(apply(betas.mat, 2, function(x) { 1 - ( length(which(is.na(x))) / length(x) ) > proportionOfProbesRequired}))]
+      samplesToRemove <- colnames(betas.mat)[which(apply(betas.mat, 2, function(x) { 1 - ( length(which(is.na(x))) / length(x) ) < proportionOfProbesRequired}))]
       if( length(samplesToRemove) > 0 ) {
         betas.mat <- betas.mat[,-which(colnames(betas.mat) %in% samplesToRemove)]
       }
